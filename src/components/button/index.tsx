@@ -14,7 +14,8 @@ const ButtonComponent = (props: ButtonProps) => {
         customStyle,
         className,
         fontSize,
-        circularProgressSize = 30
+        circularProgressSize = 30,
+        name
     } = props;
     const textSize = useMediaQuery(theme.breakpoints.down('sm'));
     const textSizeHandler = () => {
@@ -24,6 +25,7 @@ const ButtonComponent = (props: ButtonProps) => {
     }
     return (
         <Button
+            aria-description={name}
             className={className}
             style={customStyle}
             variant={type}

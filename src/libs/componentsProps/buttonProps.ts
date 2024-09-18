@@ -11,6 +11,7 @@ interface ButtonProps {
   className?:string
   fontSize?: string | number;
   circularProgressSize?: number
+  name?: string;
 }
 
 export default ButtonProps;

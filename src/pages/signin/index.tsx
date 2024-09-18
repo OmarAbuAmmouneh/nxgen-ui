@@ -122,6 +122,7 @@ const SignInPage = () => {
                     />
 
                     <ButtonComponent
+                        name="signIn"
                         isLoading={isLoading}
                         type="primary"
                         title={'Sign In'}
