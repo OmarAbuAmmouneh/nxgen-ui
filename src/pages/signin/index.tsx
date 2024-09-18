@@ -47,7 +47,6 @@ const SignInPage = () => {
         },
     });
     const navigate = useNavigate();
-    const {t} = useTranslation("translation");
     const dispatch = useDispatch();
     const isAuthenticated = useSelector(getIsAuthenticated);
 
@@ -106,7 +105,7 @@ const SignInPage = () => {
                         label=""
                         icon={<Person/>}
                         error={errors?.email}
-                        placeholder={`${t(`signInPage.username`)}`}
+                        placeholder={'Sign In'}
                         required
                     />
                     <PasswordInput
@@ -117,7 +116,7 @@ const SignInPage = () => {
                             setFieldValue("password", inputValue);
                         }}
                         label=""
-                        placeholder={`${t(`signInPage.password`)}`}
+                        placeholder={'Password'}
                         error={errors?.password}
                         showIcon
                         required={true}
@@ -126,7 +125,7 @@ const SignInPage = () => {
                     <ButtonComponent
                         isLoading={isLoading}
                         type="primary"
-                        title={`${t(`signInPage.signIn`)}`}
+                        title={'Sign In'}
                         onClick={() => handleSubmit()}
                     />
                 </Box>

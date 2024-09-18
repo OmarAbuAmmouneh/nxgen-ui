@@ -25,6 +25,11 @@ const Layout = (props: IProps) => {
     let location = useLocation();
     let selectedItem = useMemo(() => `/${location?.pathname.split('/')[1]}`, [location?.pathname]);
 
+    // const selectedFromSideBar = wholeContent.main.find(
+    //     (content) => content.link == selectedItem)
+    //     || wholeContent.secondary.find(
+    //         (content) => content.link == selectedItem);
+
 
     useEffect(() => {
         let currentPage = location?.pathname.split('/')
