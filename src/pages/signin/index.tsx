@@ -8,7 +8,6 @@ import {setTokens, setUser} from "src/state/user";
 import Cookies from "js-cookie";
 import {useSelector, useDispatch} from "react-redux";
 import {getIsAuthenticated} from "src/state/selectors";
-import {useTranslation} from "react-i18next";
 import {theme} from "src/theme";
 import {Person, Https} from "@mui/icons-material";
 import { useLoginMutation } from "src/data/auth";
