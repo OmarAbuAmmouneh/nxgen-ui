@@ -13,7 +13,8 @@
     "build-prod": "cp ./src/env.prod.ts ./src/env.ts && tsc && vite build --outDir dist/production",
     "build-relative": "cp ./src/env.relative.ts ./src/env.ts && tsc && vite build --outDir dist/relative",
     "preview": "vite preview",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "test:cypress": "cypress run"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
