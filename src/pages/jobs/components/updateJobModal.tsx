@@ -37,9 +37,9 @@ const UpdateJobModal = ({onClose, onUpdate, values, isLoading}: IProps) => {
         }
     })
     return <Modal isLoading={isLoading} onClose={() => onClose()} isOpen={true}
-                  primaryButtonTitle={t('accounts.submit') ?? ''}
-                  title={t('accounts.updateAccount') ?? ''}
-                  secondaryButtonTitle={t('accounts.cancel') ?? ''}
+                  primaryButtonTitle={'Update'}
+                  title={'Update Job'}
+                  secondaryButtonTitle={'Cancel'}
                   secondaryButtonAction={() => onClose()}
                   primaryButtonAction={() => {
                       formik.handleSubmit();
