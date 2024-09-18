@@ -12,9 +12,21 @@ $ yarn install
 $ yarn dev
 
 
+# Build and Test In Terminal
+```bash
+$ yarn dev
+In a different terminal run:
+$ yarn test:cypress
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+# Build and Test In a Browser
+```bash
+$ yarn dev
+In a different terminal run:
+$ yarn cypress
+
+1- Click on end to end tests
+2- Click on the spec you want to test
+
 
 # Contribute
 TODO: Explain how other users and developers can contribute to make your code better. 
